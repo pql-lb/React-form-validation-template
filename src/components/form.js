@@ -20,6 +20,14 @@ class Form extends React.Component {
                   label="Last Name" 
                   name="last_name" 
                   required="true" />
+                  <Input 
+                  handleChange={this.handleChange}
+                  type="file" 
+                  accept='.doc,.docx'
+                  size="none" 
+                  label="CV" 
+                  name="cv" 
+                  required="true" />
               </form>
         )
     }

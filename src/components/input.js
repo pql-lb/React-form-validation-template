@@ -38,7 +38,7 @@ class Input extends React.Component {
     }
     render() {
         const {click, valid} = this.state;
-        const {label, name, required, size, type, handleChange, value} = this.props;
+        const {accept, label, name, required, size, type, handleChange, value} = this.props;
         return (
             <React.Fragment>
                 <div className="col">
@@ -50,6 +50,7 @@ class Input extends React.Component {
                         onChange={handleChange}
                         value={value}
                         type={type}
+                        accept={accept ? accept : null}
                         name={name}
                         required={required}
                         ></input>
